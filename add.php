@@ -258,6 +258,11 @@ include("koneksi.php");
 		$('.date').datepicker({
 			format: 'yyyy-mm-dd',
 		})
+
+		$( "#cari_nmbu" ).change(function() {
+  			// alert( "Handler for .change() called." );
+  			$('#kode').val($( "#cari_nmbu" ).val())
+		});
 	</script>
 </body>
 </html>
